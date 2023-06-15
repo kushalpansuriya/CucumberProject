@@ -37,21 +37,43 @@ formatter.step({
 });
 formatter.step({
   "line": 11,
-  "name": "user enters id \"kushalp033@gmail.com\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "user enters pass \"Java@000\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 13,
-  "name": "click on signIn",
+  "name": "user enters id",
+  "rows": [
+    {
+      "cells": [
+        "kushalp033@gmail.com"
+      ],
+      "line": 12
+    }
+  ],
   "keyword": "Then "
 });
 formatter.step({
   "line": 14,
+  "name": "user enters pass",
+  "rows": [
+    {
+      "cells": [
+        "Password"
+      ],
+      "line": 15
+    },
+    {
+      "cells": [
+        "Java@000"
+      ],
+      "line": 16
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 18,
+  "name": "click on signIn",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 19,
   "name": "user is on final homepage",
   "keyword": "Then "
 });
@@ -59,7 +81,7 @@ formatter.match({
   "location": "LoginStepDef.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 9002770750,
+  "duration": 6784335708,
   "status": "passed"
 });
 formatter.match({
@@ -72,54 +94,42 @@ formatter.match({
   "location": "LoginStepDef.title_of_the_page_is(String)"
 });
 formatter.result({
-  "duration": 11932417,
+  "duration": 16710500,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.user_click_on_login_button()"
 });
 formatter.result({
-  "duration": 4297636000,
+  "duration": 4137971375,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "kushalp033@gmail.com",
-      "offset": 16
-    }
-  ],
-  "location": "LoginStepDef.user_enters_id(String)"
+  "location": "LoginStepDef.user_enters_id(DataTable)"
 });
 formatter.result({
-  "duration": 928151334,
+  "duration": 739643625,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Java@000",
-      "offset": 18
-    }
-  ],
-  "location": "LoginStepDef.user_enters_pass(String)"
+  "location": "LoginStepDef.user_enters_pass(DataTable)"
 });
 formatter.result({
-  "duration": 1075803333,
+  "duration": 1072482209,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.click_on_sign_in()"
 });
 formatter.result({
-  "duration": 233899584,
+  "duration": 232792000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.user_is_on_final_homepage()"
 });
 formatter.result({
-  "duration": 5728026041,
+  "duration": 5726095791,
   "status": "passed"
 });
 });

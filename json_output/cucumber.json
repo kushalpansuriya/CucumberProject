@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9002770750,
+              "duration": 6784335708,
               "status": "passed"
             },
             "line": 8,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 11932417,
+              "duration": 16710500,
               "status": "passed"
             },
             "line": 9,
@@ -42,7 +42,7 @@
           },
           {
             "result": {
-              "duration": 4297636000,
+              "duration": 4137971375,
               "status": "passed"
             },
             "line": 10,
@@ -54,46 +54,56 @@
           },
           {
             "result": {
-              "duration": 928151334,
+              "duration": 739643625,
               "status": "passed"
             },
             "line": 11,
-            "name": "user enters id \"kushalp033@gmail.com\"",
+            "name": "user enters id",
             "match": {
-              "arguments": [
-                {
-                  "val": "kushalp033@gmail.com",
-                  "offset": 16
-                }
-              ],
-              "location": "LoginStepDef.user_enters_id(String)"
+              "location": "LoginStepDef.user_enters_id(DataTable)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "kushalp033@gmail.com"
+                ],
+                "line": 12
+              }
+            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1075803333,
+              "duration": 1072482209,
               "status": "passed"
             },
-            "line": 12,
-            "name": "user enters pass \"Java@000\"",
+            "line": 14,
+            "name": "user enters pass",
             "match": {
-              "arguments": [
-                {
-                  "val": "Java@000",
-                  "offset": 18
-                }
-              ],
-              "location": "LoginStepDef.user_enters_pass(String)"
+              "location": "LoginStepDef.user_enters_pass(DataTable)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "Password"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "Java@000"
+                ],
+                "line": 16
+              }
+            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 233899584,
+              "duration": 232792000,
               "status": "passed"
             },
-            "line": 13,
+            "line": 18,
             "name": "click on signIn",
             "match": {
               "location": "LoginStepDef.click_on_sign_in()"
@@ -102,10 +112,10 @@
           },
           {
             "result": {
-              "duration": 5728026041,
+              "duration": 5726095791,
               "status": "passed"
             },
-            "line": 14,
+            "line": 19,
             "name": "user is on final homepage",
             "match": {
               "location": "LoginStepDef.user_is_on_final_homepage()"

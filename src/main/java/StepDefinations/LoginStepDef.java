@@ -1,5 +1,8 @@
 package StepDefinations;
 
+import java.util.List;
+import java.util.Map;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -7,6 +10,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -42,25 +46,30 @@ public class LoginStepDef {
 	
 	}
 
-	@Then("^user enters id \\\"([^\\\"]*)\\\"$")
-	public void user_enters_id(String LoginId) throws InterruptedException {
+	@Then("^user enters id$")
+	public void user_enters_id(DataTable credentials) throws InterruptedException {
 		if (driver.findElement(By.xpath("//button[contains(text(),'OK')]")).isDisplayed()) {
-			driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click();
-		}
-
+			driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click();  }
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		jse.executeScript("window.scrollBy(0,500)");
-
+		jse.executeScript("window.scrollBy(0,200)");
 	    driver.findElement(By.xpath("//div[@class='_jwti9r']//button[@type='button']")).click();
+	    
+	    
+	    List<List<String>> data1 = credentials.raw();
 		
-		driver.findElement(By.xpath("//input[@id='email-login-email']")).sendKeys(LoginId + Keys.ENTER);
+		driver.findElement(By.xpath("//input[@id='email-login-email']")).sendKeys(data1.get(0).get(0) + Keys.ENTER);
 
 	}
 
-	@Then("^user enters pass \\\"([^\\\"]*)\\\"$")
-	public void user_enters_pass(String Pass) throws InterruptedException {
+	@Then("^user enters pass$")
+	public void user_enters_pass(DataTable credentials) throws InterruptedException {
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//input[@id='email-signup-password']")).sendKeys(Pass);
+		
+		
+		for(Map<String, String> data2  : credentials.asMaps(String.class, String.class)) {
+		
+		driver.findElement(By.xpath("//input[@id='email-signup-password']")).sendKeys(data2.get("Password"));
+		}
 
 	}
 
