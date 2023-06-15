@@ -63,7 +63,7 @@ public class LoginStepDef {
 
 	@Then("^user enters pass$")
 	public void user_enters_pass(DataTable credentials) throws InterruptedException {
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		
 		
 		for(Map<String, String> data2  : credentials.asMaps(String.class, String.class)) {

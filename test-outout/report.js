@@ -81,7 +81,7 @@ formatter.match({
   "location": "LoginStepDef.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 6784335708,
+  "duration": 8567731958,
   "status": "passed"
 });
 formatter.match({
@@ -94,42 +94,42 @@ formatter.match({
   "location": "LoginStepDef.title_of_the_page_is(String)"
 });
 formatter.result({
-  "duration": 16710500,
+  "duration": 20500083,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.user_click_on_login_button()"
 });
 formatter.result({
-  "duration": 4137971375,
+  "duration": 4203828834,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.user_enters_id(DataTable)"
 });
 formatter.result({
-  "duration": 739643625,
+  "duration": 800637709,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.user_enters_pass(DataTable)"
 });
 formatter.result({
-  "duration": 1072482209,
+  "duration": 2078070875,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.click_on_sign_in()"
 });
 formatter.result({
-  "duration": 232792000,
+  "duration": 235303084,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.user_is_on_final_homepage()"
 });
 formatter.result({
-  "duration": 5726095791,
+  "duration": 5808394584,
   "status": "passed"
 });
 });
