@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="21.278219">
+    <testcase classname="Login to AirBnB" name="Login to airbnb test" time="21.278219">
+        <system-out><![CDATA[Given User is on home page..................................................passed
+When title of the page is "Vacation Homes & Condo Rentals - Airbnb - Airbnb".passed
+Then user click on login button.............................................passed
+Then user enters id "kushalp033@gmail.com"..................................passed
+Then user enters pass "Java@000"............................................passed
+Then click on signIn........................................................passed
+Then user is on final homepage..............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

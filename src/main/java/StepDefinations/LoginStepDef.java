@@ -78,5 +78,39 @@ public class LoginStepDef {
 		Assert.assertEquals(expectedTitle, actualTitle);
 		driver.close();
 	}
-
+	
+	
+	
+	
+	//********************List method with one row of data*******************
+	
+//	 @Then("^user enters deal details$")
+//	 public void user_enters_contacts_details(DataTable dealData){
+//		 List<List<String>> dealValues =  dealData.raw();
+//		 driver.findElement(By.id("title")).sendKeys(dealValues.get(0).get(0));
+	
+	
+	
+	
+	//*****************Parameterized method using mapping************************
+	
+	
+//	@Then("^user enters deal details$")
+//	public void user_enters_contacts_details(DataTable dealData) {
+//
+//		for (Map<String, String> data : dealData.asMaps(String.class, String.class)) {
+//
+//			driver.findElement(By.id("title")).sendKeys(data.get("title"));
+//			driver.findElement(By.id("amount")).sendKeys(data.get("amount"));
+//			driver.findElement(By.id("probability")).sendKeys(data.get("probability"));
+//			driver.findElement(By.id("commission")).sendKeys(data.get("commission"));
+//			
+//			driver.findElement(By.xpath("//input[@type='submit' and @value='Save']")).click(); //save button
+//			
+//			//move to new deal page:
+//			Actions action = new Actions(driver);
+//			action.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Deals')]"))).build().perform();
+//			driver.findElement(By.xpath("//a[contains(text(),'New Deal')]")).click();
+//
+//		}
 }
